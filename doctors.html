@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f8fafc" />
+    <meta
+      name="description"
+      content="Meet the Northstar Medical doctors who make thoughtful, personal care feel different."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Our Doctors | Northstar Medical</title>
+  </head>
+  <body>
+    <svg
+      class="icon-library"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+    >
+      <symbol id="i-arrow" viewBox="0 0 24 24">
+        <path d="M5 12h14m-7-7 7 7-7 7" />
+      </symbol>
+      <symbol id="i-menu" viewBox="0 0 24 24">
+        <path d="M4 7h16M4 12h16M4 17h16" />
+      </symbol>
+      <symbol id="i-close" viewBox="0 0 24 24">
+        <path d="m18 6-12 12M6 6l12 12" />
+      </symbol>
+      <symbol id="i-moon" viewBox="0 0 24 24">
+        <path d="M20.6 15.4A8 8 0 0 1 8.6 3.4 8 8 0 1 0 20.6 15.4Z" />
+      </symbol>
+      <symbol id="i-sun" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="4" />
+        <path
+          d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"
+        />
+      </symbol>
+      <symbol id="i-cross" viewBox="0 0 24 24">
+        <path d="M10 3h4v7h7v4h-7v7h-4v-7H3v-4h7z" />
+      </symbol>
+      <symbol id="i-user" viewBox="0 0 24 24">
+        <circle cx="12" cy="8" r="4" />
+        <path d="M5 21v-2a7 7 0 0 1 14 0v2" />
+      </symbol>
+      <symbol id="i-star" viewBox="0 0 24 24">
+        <path
+          d="m12 3 2.8 5.7 6.2.9-4.5 4.4 1.1 6.2L12 17.3l-5.6 2.9 1.1-6.2L3 9.6l6.2-.9L12 3Z"
+        />
+      </symbol>
+    </svg>
+
+    <div class="announcement">
+      <span class="announcement-dot"></span>Here for you, day and night
+      <span class="announcement-divider">/</span>
+      <a href="tel:+18005550140"
+        >Call (800) 555-0140
+        <svg class="icon icon-small" aria-hidden="true">
+          <use href="#i-arrow" /></svg
+      ></a>
+    </div>
+
+    <header class="site-header" id="top">
+      <a
+        class="brand"
+        href="./index.html#top"
+        aria-label="Northstar Medical home"
+      >
+        <span class="brand-mark"
+          ><svg class="icon" aria-hidden="true"><use href="#i-cross" /></svg
+        ></span>
+        <span class="brand-name">northstar<span>medical</span></span>
+      </a>
+      <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+        <a href="./care.html">Our care</a>
+        <a href="./index.html#about">Why Northstar</a>
+        <a href="./doctors.html" aria-current="page">Our doctors</a>
+        <a href="./index.html#stories">Patient stories</a>
+        <a class="mobile-appointment" href="./index.html#appointment"
+          >Book a visit
+          <svg class="icon icon-small" aria-hidden="true">
+            <use href="#i-arrow" /></svg
+        ></a>
+      </nav>
+      <div class="header-actions">
+        <button
+          class="icon-button"
+          id="theme-toggle"
+          type="button"
+          aria-label="Switch to dark mode"
+          title="Switch theme"
+        >
+          <svg class="icon" aria-hidden="true"><use href="#i-moon" /></svg>
+        </button>
+        <a
+          class="icon-button"
+          href="./login.html"
+          aria-label="Log in to your patient account"
+          title="Patient login"
+        >
+          <svg class="icon" aria-hidden="true"><use href="#i-user" /></svg>
+        </a>
+        <a
+          class="button button-primary header-cta"
+          href="./index.html#appointment"
+          >Book a visit
+          <svg class="icon icon-small" aria-hidden="true">
+            <use href="#i-arrow" /></svg
+        ></a>
+        <button
+          class="icon-button menu-toggle"
+          id="menu-toggle"
+          type="button"
+          aria-label="Open navigation menu"
+          aria-expanded="false"
+          aria-controls="main-nav"
+        >
+          <svg class="icon" aria-hidden="true"><use href="#i-menu" /></svg>
+        </button>
+      </div>
+    </header>
+
+    <main class="doctors-page-main">
+      <section
+        class="doctors-page-hero section-shell"
+        aria-labelledby="doctors-page-heading"
+      >
+        <div>
+          <p class="eyebrow">
+            <span class="eyebrow-line"></span>Good people, great care
+          </p>
+          <h1 id="doctors-page-heading">
+            Meet your <span>kind of doctor.</span>
+          </h1>
+          <p>
+            Care feels different when you find someone who listens. Get to know
+            a few of the people ready to be in your corner.
+          </p>
+          <a
+            class="button button-primary button-large"
+            href="./index.html#appointment"
+            >Find your doctor
+            <svg class="icon icon-small" aria-hidden="true">
+              <use href="#i-arrow" /></svg
+          ></a>
+        </div>
+        <div class="doctors-page-visual">
+          <img
+            src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=1000&h=720&q=85"
+            alt="Northstar family medicine doctor Olivia Bennett"
+          />
+          <span>Thoughtful care starts with a real connection.</span>
+        </div>
+      </section>
+
+      <section
+        class="doctors-page-list section-shell"
+        aria-labelledby="doctor-list-heading"
+      >
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">
+              <span class="eyebrow-line"></span>People first, always
+            </p>
+            <h2 id="doctor-list-heading">
+              A good place to <span>begin.</span>
+            </h2>
+          </div>
+          <p class="doctors-list-note">
+            Our care team brings different expertise and one shared promise: to
+            see the whole you.
+          </p>
+        </div>
+        <div class="doctor-grid">
+          <article class="doctor-card">
+            <a
+              class="doctor-photo"
+              href="./index.html#appointment"
+              aria-label="Book an appointment with Dr. Olivia Bennett"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=700&h=820&q=85"
+                alt="Dr. Olivia Bennett"
+                loading="lazy"
+              />
+              <span class="doctor-specialty">Family medicine</span>
+              <span class="doctor-arrow"
+                ><svg class="icon" aria-hidden="true">
+                  <use href="#i-arrow" /></svg
+              ></span>
+            </a>
+            <div class="doctor-info">
+              <div>
+                <h3>Olivia Bennett, MD</h3>
+                <p>Here for your whole family.</p>
+              </div>
+              <span class="doctor-rating"
+                ><svg class="icon" aria-hidden="true">
+                  <use href="#i-star" /></svg
+                >4.9</span
+              >
+            </div>
+          </article>
+          <article class="doctor-card">
+            <a
+              class="doctor-photo"
+              href="./index.html#appointment"
+              aria-label="Book an appointment with Dr. Ethan Brooks"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=700&h=820&q=85"
+                alt="Dr. Ethan Brooks"
+                loading="lazy"
+              />
+              <span class="doctor-specialty">Cardiology</span>
+              <span class="doctor-arrow"
+                ><svg class="icon" aria-hidden="true">
+                  <use href="#i-arrow" /></svg
+              ></span>
+            </a>
+            <div class="doctor-info">
+              <div>
+                <h3>Ethan Brooks, MD</h3>
+                <p>Good heart. Better listener.</p>
+              </div>
+              <span class="doctor-rating"
+                ><svg class="icon" aria-hidden="true">
+                  <use href="#i-star" /></svg
+                >5.0</span
+              >
+            </div>
+          </article>
+          <article class="doctor-card">
+            <a
+              class="doctor-photo"
+              href="./index.html#appointment"
+              aria-label="Book an appointment with Dr. Maya Patel"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?auto=format&fit=crop&w=700&h=820&q=85"
+                alt="Dr. Maya Patel"
+                loading="lazy"
+              />
+              <span class="doctor-specialty">Pediatrics</span>
+              <span class="doctor-arrow"
+                ><svg class="icon" aria-hidden="true">
+                  <use href="#i-arrow" /></svg
+              ></span>
+            </a>
+            <div class="doctor-info">
+              <div>
+                <h3>Maya Patel, MD</h3>
+                <p>Little people, big advocates.</p>
+              </div>
+              <span class="doctor-rating"
+                ><svg class="icon" aria-hidden="true">
+                  <use href="#i-star" /></svg
+                >4.9</span
+              >
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="doctors-page-cta">
+        <div class="section-shell doctors-page-cta-inner">
+          <div>
+            <p class="eyebrow">
+              <span class="eyebrow-line"></span>Your next step
+            </p>
+            <h2>Let’s find the right <span>fit.</span></h2>
+            <p>
+              Tell us what kind of care you need. We’ll help you find a doctor
+              and a time that work for your life.
+            </p>
+          </div>
+          <a
+            class="button button-primary button-large"
+            href="./index.html#appointment"
+            >Request an appointment
+            <svg class="icon icon-small" aria-hidden="true">
+              <use href="#i-arrow" /></svg
+          ></a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="care-page-footer">
+      <div class="section-shell care-page-footer-inner">
+        <a
+          class="brand"
+          href="./index.html#top"
+          aria-label="Northstar Medical home"
+        >
+          <span class="brand-mark"
+            ><svg class="icon" aria-hidden="true"><use href="#i-cross" /></svg
+          ></span>
+          <span class="brand-name">northstar<span>medical</span></span>
+        </a>
+        <span
+          >Thoughtful care, for all of life. Right here in your
+          neighborhood.</span
+        >
+        <a href="tel:+18005550140">(800) 555-0140</a>
+      </div>
+    </footer>
+
+    <script>
+      const menuToggle = document.querySelector("#menu-toggle");
+      const mainNav = document.querySelector("#main-nav");
+      const menuIcon = menuToggle.querySelector("use");
+      const themeToggle = document.querySelector("#theme-toggle");
+      const themeIcon = themeToggle.querySelector("use");
+      const savedTheme = localStorage.getItem("northstar-theme");
+
+      if (savedTheme === "dark") document.body.classList.add("theme-dark");
+
+      function updateTheme() {
+        const isDark = document.body.classList.contains("theme-dark");
+        themeIcon.setAttribute("href", isDark ? "#i-sun" : "#i-moon");
+        themeToggle.setAttribute(
+          "aria-label",
+          isDark ? "Switch to light mode" : "Switch to dark mode",
+        );
+        document.querySelector('meta[name="theme-color"]').content = isDark
+          ? "#0c1823"
+          : "#f8fafc";
+      }
+
+      function closeMenu() {
+        mainNav.classList.remove("is-open");
+        menuToggle.setAttribute("aria-expanded", "false");
+        menuToggle.setAttribute("aria-label", "Open navigation menu");
+        menuIcon.setAttribute("href", "#i-menu");
+      }
+
+      updateTheme();
+      themeToggle.addEventListener("click", () => {
+        document.body.classList.toggle("theme-dark");
+        localStorage.setItem(
+          "northstar-theme",
+          document.body.classList.contains("theme-dark") ? "dark" : "light",
+        );
+        updateTheme();
+      });
+      menuToggle.addEventListener("click", () => {
+        const isOpen = mainNav.classList.toggle("is-open");
+        menuToggle.setAttribute("aria-expanded", String(isOpen));
+        menuToggle.setAttribute(
+          "aria-label",
+          isOpen ? "Close navigation menu" : "Open navigation menu",
+        );
+        menuIcon.setAttribute("href", isOpen ? "#i-close" : "#i-menu");
+      });
+      mainNav
+        .querySelectorAll("a")
+        .forEach((link) => link.addEventListener("click", closeMenu));
+    </script>
+  </body>
+</html>

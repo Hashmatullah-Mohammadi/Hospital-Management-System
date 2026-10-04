@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f8fafc" />
+    <meta
+      name="description"
+      content="Create your Northstar Medical patient account."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Create Account | Northstar Medical</title>
+  </head>
+  <body class="auth-body">
+    <svg
+      class="icon-library"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+    >
+      <symbol id="i-arrow" viewBox="0 0 24 24">
+        <path d="M5 12h14m-7-7 7 7-7 7" />
+      </symbol>
+      <symbol id="i-cross" viewBox="0 0 24 24">
+        <path d="M10 3h4v7h7v4h-7v7h-4v-7H3v-4h7z" />
+      </symbol>
+      <symbol id="i-moon" viewBox="0 0 24 24">
+        <path d="M20.6 15.4A8 8 0 0 1 8.6 3.4 8 8 0 1 0 20.6 15.4Z" />
+      </symbol>
+      <symbol id="i-sun" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="4" />
+        <path
+          d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"
+        />
+      </symbol>
+    </svg>
+
+    <header class="auth-header section-shell">
+      <a
+        class="brand"
+        href="./index.html#top"
+        aria-label="Northstar Medical home"
+      >
+        <span class="brand-mark"
+          ><svg class="icon" aria-hidden="true"><use href="#i-cross" /></svg
+        ></span>
+        <span class="brand-name">northstar<span>medical</span></span>
+      </a>
+      <div class="auth-header-actions">
+        <a class="auth-switch" href="./login.html"
+          >Sign in
+          <svg class="icon icon-small" aria-hidden="true">
+            <use href="#i-arrow" /></svg
+        ></a>
+        <button
+          class="icon-button"
+          id="theme-toggle"
+          type="button"
+          aria-label="Switch to dark mode"
+          title="Switch theme"
+        >
+          <svg class="icon" aria-hidden="true"><use href="#i-moon" /></svg>
+        </button>
+      </div>
+    </header>
+
+    <main class="auth-layout section-shell auth-layout-register">
+      <aside class="auth-visual auth-visual-register">
+        <img
+          src="https://images.unsplash.com/photo-1551076805-e1869033e561?auto=format&fit=crop&w=1100&q=85"
+          alt="A doctor speaking with a patient in a bright clinic"
+        />
+        <div class="auth-visual-copy">
+          <p class="eyebrow">
+            <span class="eyebrow-line"></span>A healthier kind of healthcare
+          </p>
+          <h2>A care team that sees the <span>whole you.</span></h2>
+          <p>Start a more connected relationship with your care team.</p>
+        </div>
+      </aside>
+
+      <section class="auth-panel" aria-labelledby="auth-heading">
+        <p class="eyebrow"><span class="eyebrow-line"></span>Patient account</p>
+        <h1 id="auth-heading">Let’s get started.</h1>
+        <p class="auth-description">
+          Create your account to stay connected with Northstar Medical.
+        </p>
+        <form class="auth-form" id="register-form">
+          <div class="auth-name-row">
+            <label
+              >First name<input
+                type="text"
+                name="firstName"
+                autocomplete="given-name"
+                placeholder="Jamie"
+                required
+            /></label>
+            <label
+              >Last name<input
+                type="text"
+                name="lastName"
+                autocomplete="family-name"
+                placeholder="Taylor"
+                required
+            /></label>
+          </div>
+          <label
+            >Email address<input
+              type="email"
+              name="email"
+              autocomplete="email"
+              placeholder="you@example.com"
+              required
+          /></label>
+          <label
+            >Password<input
+              type="password"
+              name="password"
+              autocomplete="new-password"
+              minlength="8"
+              placeholder="At least 8 characters"
+              required
+          /></label>
+          <label class="auth-checkbox auth-terms"
+            ><input type="checkbox" name="terms" required /> I agree to the
+            patient account terms and privacy notice.</label
+          >
+          <button class="button button-primary submit-button" type="submit">
+            Create account
+            <svg class="icon icon-small" aria-hidden="true">
+              <use href="#i-arrow" />
+            </svg>
+          </button>
+          <p class="auth-feedback" id="auth-feedback" aria-live="polite"></p>
+        </form>
+        <p class="auth-notice">
+          Account registration is not connected in this preview. Call
+          <a href="tel:+18005550140">(800) 555-0140</a> for assistance.
+        </p>
+        <p class="auth-bottom-link">
+          Already have an account? <a href="./login.html">Sign in</a>
+        </p>
+      </section>
+    </main>
+
+    <script src="./assets/js/auth.js"></script>
+  </body>
+</html>

@@ -90,26 +90,6 @@ searchBar.addEventListener("submit", (event) => {
   }
 });
 
-const loginDialog = document.querySelector("#login-dialog");
-document
-  .querySelector("#login-open")
-  .addEventListener("click", () => loginDialog.showModal());
-document
-  .querySelector("#login-close")
-  .addEventListener("click", () => loginDialog.close());
-document
-  .querySelector("#login-book")
-  .addEventListener("click", () => loginDialog.close());
-loginDialog.addEventListener("click", (event) => {
-  if (event.target === loginDialog) loginDialog.close();
-});
-
-document.querySelector("#login-form").addEventListener("submit", (event) => {
-  event.preventDefault();
-  document.querySelector("#login-feedback").textContent =
-    "Patient portal access will be available soon. Please call (800) 555-0140 for help.";
-});
-
 document
   .querySelector("#appointment-form")
   .addEventListener("submit", (event) => {
